@@ -20,7 +20,7 @@ Gesellschaft für Telematikanwendungen der Gesundheitskarte GmbH (gematik)
 
 # Ordnerstruktur
 
-'''ISiK
+```ISiK
 ├─ ImplementationGuide
 ├── README.md
-└── ReleaseNotes.md'''
+└── ReleaseNotes.md```
