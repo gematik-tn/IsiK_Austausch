@@ -17,3 +17,10 @@ Weitere Informationen siehe [§373 SGB V](https://www.gesetze-im-internet.de/sgb
 Gesellschaft für Telematikanwendungen der Gesundheitskarte GmbH (gematik)
 
 [Impressum](https://www.gematik.de/impressum/)
+
+# Ordnerstruktur
+
+ISiK
+├─ ImplementationGuide
+├── README.md
+└── ReleaseNotes.md
