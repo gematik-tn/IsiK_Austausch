@@ -3,6 +3,29 @@
     <meta>
         <profile value="https://gematik.de/fhir/ISiK/StructureDefinition/ISiKKontaktGesundheitseinrichtung" />
     </meta>
+    <extension url="http://fhir.de/StructureDefinition/Aufnahmegrund">
+        <extension url="ErsteUndZweiteStelle" >
+            <valueCoding>
+                <system value="http://fhir.de/CodeSystem/dkgev/AufnahmegrundErsteUndZweiteStelle" />
+                <code value="01" />
+                <display value="Krankenhausbehandlung, vollstationär" />
+            </valueCoding>
+        </extension>
+        <extension url="DritteStelle" >
+            <valueCoding>
+                <system value="http://fhir.de/CodeSystem/dkgev/AufnahmegrundDritteStelle" />
+                <code value="0" />
+                <display value="Anderes" />
+            </valueCoding>
+        </extension>
+        <extension url="DritteStelle" >
+            <valueCoding>
+                <system value="http://fhir.de/CodeSystem/dkgev/AufnahmegrundVierteStelle" />
+                <code value="1" />
+                <display value="Normalfall" />
+            </valueCoding>
+        </extension>
+    </extension>
     <identifier>
         <type>
             <coding>
@@ -43,6 +66,18 @@
         <start value="2021-02-12" />
         <end value="2021-02-13" />
     </period>
+    <diagnosis>
+        <condition>
+            <reference value="Condition/test" />
+        </condition>
+        <use>
+            <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/diagnosis-role" />
+                <code value="CC" />
+                <display value="Hauptdiagnose" />
+            </coding>
+        </use>
+    </diagnosis>
     <hospitalization>
         <admitSource>
             <coding>
@@ -50,5 +85,31 @@
                 <code value="E" />
             </coding>
         </admitSource>
+        <dischargeDisposition>
+            <extension url="http://fhir.de/StructureDefinition/Entlassungsgrund">
+                <extension url="ErsteUndZweiteStelle" >
+                    <valueCoding>
+                        <system value="http://fhir.de/CodeSystem/dkgev/EntlassungsgrundErsteUndZweiteStelle" />
+                        <code value="01" />
+                        <display value="Behandlung regulär beendet" />
+                    </valueCoding>
+                </extension>
+                <extension url="DritteStelle" >
+                    <valueCoding>
+                        <system value="http://fhir.de/CodeSystem/dkgev/EntlassungsgrundDritteStelle" />
+                        <code value="1" />
+                        <display value="arbeitsfähig entlassen" />
+                    </valueCoding>
+                </extension>
+            </extension>
+        </dischargeDisposition>
     </hospitalization>
+    <location>
+        <location>
+            <display value="Krankenhaus XYZ" />
+        </location>
+    </location>
+    <serviceProvider>
+        <display value="Fachabteilung XYZ" />
+    </serviceProvider>
 </Encounter>

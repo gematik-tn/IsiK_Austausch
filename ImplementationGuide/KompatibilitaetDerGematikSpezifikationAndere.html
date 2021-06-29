@@ -5,21 +5,21 @@
     <head>
 
         <meta charset="utf-8" />
-        <title>Implementierungsleitfaden IsiK-Basismodul 1.0.0 CC</title>
+        <title>Implementierungsleitfaden ISiK-Basismodul 1.0.0</title>
 
-        <link rel="icon" href="guide/ImplementierungsleitfadenIsiK-Basismodul/files/styles/common/favicon.ico" />
+        <link rel="icon" href="guide/ImplementierungsleitfadenISiK-Basismodul/files/styles/common/favicon.ico" />
 
-        <script src="guide/ImplementierungsleitfadenIsiK-Basismodul/files/styles/common/jquery/jquery.min.js"></script>
-        <script src="guide/ImplementierungsleitfadenIsiK-Basismodul/files/styles/common/bootstrap/bootstrap.min.js"></script>
+        <script src="guide/ImplementierungsleitfadenISiK-Basismodul/files/styles/common/jquery/jquery.min.js"></script>
+        <script src="guide/ImplementierungsleitfadenISiK-Basismodul/files/styles/common/bootstrap/bootstrap.min.js"></script>
 
-        <link rel="stylesheet" href="guide/ImplementierungsleitfadenIsiK-Basismodul/files/styles/common/main.min.css" />
-        <link rel="stylesheet" href="guide/ImplementierungsleitfadenIsiK-Basismodul/files/styles/common/bootstrap/bootstrap.min.css" />
-        <link rel="stylesheet" href="guide/ImplementierungsleitfadenIsiK-Basismodul/files/styles/common/rendering/rendering.min.css" />
+        <link rel="stylesheet" href="guide/ImplementierungsleitfadenISiK-Basismodul/files/styles/common/main.min.css" />
+        <link rel="stylesheet" href="guide/ImplementierungsleitfadenISiK-Basismodul/files/styles/common/bootstrap/bootstrap.min.css" />
+        <link rel="stylesheet" href="guide/ImplementierungsleitfadenISiK-Basismodul/files/styles/common/rendering/rendering.min.css" />
 
-        <script src="guide/ImplementierungsleitfadenIsiK-Basismodul/files/styles/common/rendering/stu3TreeTable.min.js"></script>
-        <script src="guide/ImplementierungsleitfadenIsiK-Basismodul/files/styles/common/rendering/baseTreetable.min.js"></script>
+        <script src="guide/ImplementierungsleitfadenISiK-Basismodul/files/styles/common/rendering/stu3TreeTable.min.js"></script>
+        <script src="guide/ImplementierungsleitfadenISiK-Basismodul/files/styles/common/rendering/baseTreetable.min.js"></script>
 
-        <link rel="stylesheet" href="guide/ImplementierungsleitfadenIsiK-Basismodul/files/styles/twolevelmenu/style.css?v=1d751675f1dfc80" />
+        <link rel="stylesheet" href="guide/ImplementierungsleitfadenISiK-Basismodul/files/styles/twolevelmenu/style.css?v=1d76ceca2cacf80" />
 
     </head>
 
@@ -44,7 +44,7 @@
                 <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="Einfuehrung.html">
-                Implementierungsleitfaden IsiK-Basismodul 1.0.0 CC
+                Implementierungsleitfaden ISiK-Basismodul 1.0.0
             </a>
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -222,6 +222,7 @@
 </ul>
 <p>Dennoch erstellt die gematik für die Durchführung des Verfahrens eigene, technisch unabhängige Profile. Dabei wird jedoch stets sichergestellt, dass Instanzen, die gegen gematik-Profile valide sind, ebenfalls gegen die zugrunde gelegten Profile valide sind. Ist dies ausnahmsweise nicht der Fall, dann enthalten die Profile der gematik einen entsprechenden Hinweis mit einer Begründung, warum von dem Profil abgewichen wurde bzw. eine Information darüber, welche Schritte notwendig sind, um die Kompatibilität herzustellen. Dies kann beispielsweise die zusätzliche Implementierung weiterer Elemente sein, die nicht Bestandteil des ISiK-Bestätigungsverfahrens sind, für die Erfüllung des zugrundeliegenden Profils jedoch notwendig sind. Bei der Betrachtung der Kompatibilität wird stets von Implementierungen ausgegangen, die exakt die Minimalanforderungen (Pflichtfelder, Must-Support-Felder) der gematik-Spezifikation umsetzen. Weiterhin ist die Betrachtung auf harte Inkompatibilitäten begrenzt, d.h. widersprüchliche Kardinalitäten oder abweichende Kodierungen. Auf ggf. abweichende Must-Support-Felder mit optionaler Kardinalität, die zu keiner technischen Inkompatibilität führen, wird nicht explizit hingewiesen.</p>
 <p>Die Hinweise zur Kompatibilität sind jeweils im Unterkapitel &quot;Kompatibilität&quot; der einzelnen Datenobjekte zu finden.</p>
+<p>Wichtig: Inkompatibilitäten, die sich dadurch ergeben, dass die <a href="https://simplifier.net/base1x0">KBV-Basisprofile</a> und die <a href="https://simplifier.net/for">Formularübergreifenden Vorgaben für Digitale Muster</a> noch eine ältere Fassung der Deutschen Basisprofile (&lt;1.0) verwenden, werden bei der Betrachtung der Kompatibilitäten nicht gesondert aufgeführt. Hierzu verweisen wir auf die <a href="https://simplifier.net/guide/basisprofil-de-r4/ReleaseNotes">Releasenotes der Deutschen Basisprofile</a>. Ein Update dieser Profile auf die Version 1.0 ist seitens der KBV avisiert, zum Zeitpunkt der Veröffentlichung konnte jedoch noch kein konkreter Termin genannt werden.</p>
 <p>Das Erfordernis der Erstellung eigener, unabhängiger Profile für ISiK ergibt sich aus folgenden Gründen:</p>
 <ol>
 <li>Technische Gründe: Im Rahmen von Connectathons können kurzfristige Bugfixes erforderlich werden, die von der gematik umsetzbar sein müssen, ohne auf einen Beschluss/ein Update seitens der MI-Initiative oder der KBV warten zu müssen.</li>

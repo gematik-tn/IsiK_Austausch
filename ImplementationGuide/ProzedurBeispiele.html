@@ -5,21 +5,21 @@
     <head>
 
         <meta charset="utf-8" />
-        <title>Implementierungsleitfaden IsiK-Basismodul 1.0.0 CC</title>
+        <title>Implementierungsleitfaden ISiK-Basismodul 1.0.0</title>
 
-        <link rel="icon" href="guide/ImplementierungsleitfadenIsiK-Basismodul/files/styles/common/favicon.ico" />
+        <link rel="icon" href="guide/ImplementierungsleitfadenISiK-Basismodul/files/styles/common/favicon.ico" />
 
-        <script src="guide/ImplementierungsleitfadenIsiK-Basismodul/files/styles/common/jquery/jquery.min.js"></script>
-        <script src="guide/ImplementierungsleitfadenIsiK-Basismodul/files/styles/common/bootstrap/bootstrap.min.js"></script>
+        <script src="guide/ImplementierungsleitfadenISiK-Basismodul/files/styles/common/jquery/jquery.min.js"></script>
+        <script src="guide/ImplementierungsleitfadenISiK-Basismodul/files/styles/common/bootstrap/bootstrap.min.js"></script>
 
-        <link rel="stylesheet" href="guide/ImplementierungsleitfadenIsiK-Basismodul/files/styles/common/main.min.css" />
-        <link rel="stylesheet" href="guide/ImplementierungsleitfadenIsiK-Basismodul/files/styles/common/bootstrap/bootstrap.min.css" />
-        <link rel="stylesheet" href="guide/ImplementierungsleitfadenIsiK-Basismodul/files/styles/common/rendering/rendering.min.css" />
+        <link rel="stylesheet" href="guide/ImplementierungsleitfadenISiK-Basismodul/files/styles/common/main.min.css" />
+        <link rel="stylesheet" href="guide/ImplementierungsleitfadenISiK-Basismodul/files/styles/common/bootstrap/bootstrap.min.css" />
+        <link rel="stylesheet" href="guide/ImplementierungsleitfadenISiK-Basismodul/files/styles/common/rendering/rendering.min.css" />
 
-        <script src="guide/ImplementierungsleitfadenIsiK-Basismodul/files/styles/common/rendering/stu3TreeTable.min.js"></script>
-        <script src="guide/ImplementierungsleitfadenIsiK-Basismodul/files/styles/common/rendering/baseTreetable.min.js"></script>
+        <script src="guide/ImplementierungsleitfadenISiK-Basismodul/files/styles/common/rendering/stu3TreeTable.min.js"></script>
+        <script src="guide/ImplementierungsleitfadenISiK-Basismodul/files/styles/common/rendering/baseTreetable.min.js"></script>
 
-        <link rel="stylesheet" href="guide/ImplementierungsleitfadenIsiK-Basismodul/files/styles/twolevelmenu/style.css?v=1d751675f1dfc80" />
+        <link rel="stylesheet" href="guide/ImplementierungsleitfadenISiK-Basismodul/files/styles/twolevelmenu/style.css?v=1d76ceca2cacf80" />
 
     </head>
 
@@ -44,7 +44,7 @@
                 <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="Einfuehrung.html">
-                Implementierungsleitfaden IsiK-Basismodul 1.0.0 CC
+                Implementierungsleitfaden ISiK-Basismodul 1.0.0
             </a>
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -203,38 +203,26 @@
 
                 <h3 id="beispiele">Beispiele</h3>
 <p>Valides Minimalbeispiel Prozedur:</p>
-<p><pre class="resource-validation-xml"><span class="brace">&lt;</span><span class="element"><a title="Diese Profil erm&#246;glicht die Nutzung von Prozedur-bezogenen Informationen in ISiK Szenarien." href="artifacts/Prozedur.xml/~details#Procedure" >Procedure</a></span> <span class="attr">xmlns</span><span class="symbol">=</span><span class="symbol">&quot;</span><span class="string">http://hl7.org/fhir</span><span class="symbol">&quot;</span><span class="brace">&gt;</span>
-    <span class="brace">&lt;</span><span class="element"><a title="Diese Profil erm&#246;glicht die Nutzung von Prozedur-bezogenen Informationen in ISiK Szenarien." href="artifacts/Prozedur.xml/~details#Procedure.id" >id</a></span> <span class="attr">value</span><span class="symbol">=</span><span class="symbol">&quot;</span><span class="string">procedure</span><span class="symbol">&quot;</span><span class="brace"> /&gt;</span>
-    <span class="brace">&lt;</span><span class="element"><a title="Diese Profil erm&#246;glicht die Nutzung von Prozedur-bezogenen Informationen in ISiK Szenarien." href="artifacts/Prozedur.xml/~details#Procedure.meta" >meta</a></span><span class="brace">&gt;</span>
-        <span class="brace">&lt;</span><span class="element"><a title="Diese Profil erm&#246;glicht die Nutzung von Prozedur-bezogenen Informationen in ISiK Szenarien." href="artifacts/Prozedur.xml/~details#Procedure.meta.profile" >profile</a></span> <span class="attr">value</span><span class="symbol">=</span><span class="symbol">&quot;</span><span class="string">https://gematik.de/fhir/ISiK/StructureDefinition/ISiKProzedur</span><span class="symbol">&quot;</span><span class="brace"> /&gt;</span>
-    <span class="brace">&lt;/</span><span class="element">meta</span><span class="brace">&gt;</span>
-    <span class="brace">&lt;</span><span class="element"><a title="Diese Profil erm&#246;glicht die Nutzung von Prozedur-bezogenen Informationen in ISiK Szenarien." href="artifacts/Prozedur.xml/~details#Procedure.status" >status</a></span> <span class="attr">value</span><span class="symbol">=</span><span class="symbol">&quot;</span><span class="string">completed</span><span class="symbol">&quot;</span><span class="brace"> /&gt;</span>
-    <span class="brace">&lt;</span><span class="element"><a title="Diese Profil erm&#246;glicht die Nutzung von Prozedur-bezogenen Informationen in ISiK Szenarien." href="artifacts/Prozedur.xml/~details#Procedure.category" >category</a></span><span class="brace">&gt;</span>
-        <span class="brace">&lt;</span><span class="element"><a title="Diese Profil erm&#246;glicht die Nutzung von Prozedur-bezogenen Informationen in ISiK Szenarien." href="artifacts/Prozedur.xml/~details#Procedure.category.coding" >coding</a></span><span class="brace">&gt;</span>
-            <span class="brace">&lt;</span><span class="element"><a title="Diese Profil erm&#246;glicht die Nutzung von Prozedur-bezogenen Informationen in ISiK Szenarien." href="artifacts/Prozedur.xml/~details#Procedure.category.coding.system" >system</a></span> <span class="attr">value</span><span class="symbol">=</span><span class="symbol">&quot;</span><span class="string">http://snomed.info/sct</span><span class="symbol">&quot;</span><span class="brace"> /&gt;</span>
-            <span class="brace">&lt;</span><span class="element"><a title="Diese Profil erm&#246;glicht die Nutzung von Prozedur-bezogenen Informationen in ISiK Szenarien." href="artifacts/Prozedur.xml/~details#Procedure.category.coding.code" >code</a></span> <span class="attr">value</span><span class="symbol">=</span><span class="symbol">&quot;</span><span class="string">387713003</span><span class="symbol">&quot;</span><span class="brace"> /&gt;</span>
-            <span class="brace">&lt;</span><span class="element"><a title="Diese Profil erm&#246;glicht die Nutzung von Prozedur-bezogenen Informationen in ISiK Szenarien." href="artifacts/Prozedur.xml/~details#Procedure.category.coding.display" >display</a></span> <span class="attr">value</span><span class="symbol">=</span><span class="symbol">&quot;</span><span class="string">Surgical procedure (procedure)</span><span class="symbol">&quot;</span><span class="brace"> /&gt;</span>
-        <span class="brace">&lt;/</span><span class="element">coding</span><span class="brace">&gt;</span>
-    <span class="brace">&lt;/</span><span class="element">category</span><span class="brace">&gt;</span>
-    <span class="brace">&lt;</span><span class="element"><a title="Diese Profil erm&#246;glicht die Nutzung von Prozedur-bezogenen Informationen in ISiK Szenarien." href="artifacts/Prozedur.xml/~details#Procedure.code" >code</a></span><span class="brace">&gt;</span>
-        <span class="brace">&lt;</span><span class="element"><a title="Diese Profil erm&#246;glicht die Nutzung von Prozedur-bezogenen Informationen in ISiK Szenarien." href="artifacts/Prozedur.xml/~details#Procedure.code.coding" >coding</a></span><span class="brace">&gt;</span>
-            <span class="brace">&lt;</span><span class="element"><a title="Diese Profil erm&#246;glicht die Nutzung von Prozedur-bezogenen Informationen in ISiK Szenarien." href="artifacts/Prozedur.xml/~details#Procedure.code.coding.system" >system</a></span> <span class="attr">value</span><span class="symbol">=</span><span class="symbol">&quot;</span><span class="string">http://snomed.info/sct</span><span class="symbol">&quot;</span><span class="brace"> /&gt;</span>
-            <span class="brace">&lt;</span><span class="element"><a title="Diese Profil erm&#246;glicht die Nutzung von Prozedur-bezogenen Informationen in ISiK Szenarien." href="artifacts/Prozedur.xml/~details#Procedure.code.coding.code" >code</a></span> <span class="attr">value</span><span class="symbol">=</span><span class="symbol">&quot;</span><span class="string">80146002</span><span class="symbol">&quot;</span><span class="brace"> /&gt;</span>
-            <span class="brace">&lt;</span><span class="element"><a title="Diese Profil erm&#246;glicht die Nutzung von Prozedur-bezogenen Informationen in ISiK Szenarien." href="artifacts/Prozedur.xml/~details#Procedure.code.coding.display" >display</a></span> <span class="attr">value</span><span class="symbol">=</span><span class="symbol">&quot;</span><span class="string">Excision of appendix (procedure)</span><span class="symbol">&quot;</span><span class="brace"> /&gt;</span>
-        <span class="brace">&lt;/</span><span class="element">coding</span><span class="brace">&gt;</span>
-        <span class="brace">&lt;</span><span class="element"><a title="Diese Profil erm&#246;glicht die Nutzung von Prozedur-bezogenen Informationen in ISiK Szenarien." href="artifacts/Prozedur.xml/~details#Procedure.code.coding" >coding</a></span><span class="brace">&gt;</span>
-            <span class="brace">&lt;</span><span class="element"><a title="Diese Profil erm&#246;glicht die Nutzung von Prozedur-bezogenen Informationen in ISiK Szenarien." href="artifacts/Prozedur.xml/~details#Procedure.code.coding.system" >system</a></span> <span class="attr">value</span><span class="symbol">=</span><span class="symbol">&quot;</span><span class="string">http://fhir.de/CodeSystem/bfarm/ops</span><span class="symbol">&quot;</span><span class="brace"> /&gt;</span>
-            <span class="brace">&lt;</span><span class="element"><a title="Diese Profil erm&#246;glicht die Nutzung von Prozedur-bezogenen Informationen in ISiK Szenarien." href="artifacts/Prozedur.xml/~details#Procedure.code.coding.version" >version</a></span> <span class="attr">value</span><span class="symbol">=</span><span class="symbol">&quot;</span><span class="string">2020</span><span class="symbol">&quot;</span><span class="brace"> /&gt;</span>
-            <span class="brace">&lt;</span><span class="element"><a title="Diese Profil erm&#246;glicht die Nutzung von Prozedur-bezogenen Informationen in ISiK Szenarien." href="artifacts/Prozedur.xml/~details#Procedure.code.coding.code" >code</a></span> <span class="attr">value</span><span class="symbol">=</span><span class="symbol">&quot;</span><span class="string">5-470</span><span class="symbol">&quot;</span><span class="brace"> /&gt;</span>
-            <span class="brace">&lt;</span><span class="element"><a title="Diese Profil erm&#246;glicht die Nutzung von Prozedur-bezogenen Informationen in ISiK Szenarien." href="artifacts/Prozedur.xml/~details#Procedure.code.coding.display" >display</a></span> <span class="attr">value</span><span class="symbol">=</span><span class="symbol">&quot;</span><span class="string">Appendektomie</span><span class="symbol">&quot;</span><span class="brace"> /&gt;</span>
-        <span class="brace">&lt;/</span><span class="element">coding</span><span class="brace">&gt;</span>
-    <span class="brace">&lt;/</span><span class="element">code</span><span class="brace">&gt;</span>
-    <span class="brace">&lt;</span><span class="element"><a title="Diese Profil erm&#246;glicht die Nutzung von Prozedur-bezogenen Informationen in ISiK Szenarien." href="artifacts/Prozedur.xml/~details#Procedure.subject" >subject</a></span><span class="brace">&gt;</span>
-        <span class="brace">&lt;</span><span class="element"><a title="Diese Profil erm&#246;glicht die Nutzung von Prozedur-bezogenen Informationen in ISiK Szenarien." href="artifacts/Prozedur.xml/~details#Procedure.subject.reference" >reference</a></span> <span class="attr">value</span><span class="symbol">=</span><span class="symbol">&quot;</span><span class="string">Patient/patient</span><span class="symbol">&quot;</span><span class="brace"> /&gt;</span>
-    <span class="brace">&lt;/</span><span class="element">subject</span><span class="brace">&gt;</span>
-    <span class="brace">&lt;</span><span class="element"><a title="Diese Profil erm&#246;glicht die Nutzung von Prozedur-bezogenen Informationen in ISiK Szenarien." href="artifacts/Prozedur.xml/~details#Procedure.performedDateTime" >performedDateTime</a></span> <span class="attr">value</span><span class="symbol">=</span><span class="symbol">&quot;</span><span class="string">2020-04-23</span><span class="symbol">&quot;</span><span class="brace"> /&gt;</span>
-<span class="brace">&lt;/</span><span class="element">Procedure</span><span class="brace">&gt;</span>
-</pre></p>
+<p><p>The resource cannot be rendered.</p><script type='text/javascript'>
+var errorMessage;
+var errorStacktrace;
+errorMessage = JSON.stringify(`Type checking the data: Since type Annotation is not a primitive, it cannot have a value (at Procedure.note[0])`);
+errorStacktrace = JSON.stringify(`   at Hl7.Fhir.Utility.ExceptionSourceExtensions.NotifyOrThrow(ExceptionNotificationHandler handler, Object source, ExceptionNotification args)
+   at Hl7.Fhir.ElementModel.TypedElementOnSourceNode.raiseTypeError(String message, Object source, Boolean warning, String location)
+   at Hl7.Fhir.ElementModel.TypedElementOnSourceNode.get_Value()
+   at Fhir.HtmlRendering.Common.ResourceXmlRendering.BuildInlineElement(ITypedElement node, Int32 nesting, IEnumerable'1 issues)
+   at Fhir.HtmlRendering.Common.ResourceXmlRendering.BuildElement(ITypedElement node, Int32 nesting, Boolean root)
+   at Fhir.HtmlRendering.Common.ResourceXmlRendering.BuildNode(ITypedElement node, Int32 nesting)
+   at Fhir.HtmlRendering.Common.ResourceXmlRendering.BuildNodes(IEnumerable'1 nodes, Int32 nesting)
+   at Fhir.HtmlRendering.Common.ResourceXmlRendering.BuildChildren(ITypedElement node, Int32 nesting, String[] comments)
+   at Fhir.HtmlRendering.Common.ResourceXmlRendering.BuildElement(ITypedElement node, Int32 nesting, Boolean root)
+   at Fhir.HtmlRendering.Common.ResourceXmlRendering.BuildDocument()
+   at Simplifier.R4.ContentRendererR4.RenderXml(String content) in D:\Code\Firely\simplifier\Simplifier.R4\Rendering\ContentRendererR4.cs:line 40
+   at Simplifier.Rendering.FileDtoRenderer.RenderXml(FileDto subject) in D:\Code\Firely\simplifier\Simplifier\Modules\Rendering\Renderers\ResourceRenderer\FileRenderer.cs:line 224`);
+console.log('Exception Message: ', errorMessage);
+console.log('Stacktrace: ', errorStacktrace);
+</script>
+</p>
 
 
 

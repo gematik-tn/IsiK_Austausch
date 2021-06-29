@@ -3,6 +3,9 @@
     <meta>
         <profile value="https://gematik.de/fhir/ISiK/StructureDefinition/ISiKProzedur" />
     </meta>
+    <extension url="https://gematik.de/fhir/ISiK/StructureDefinition/Prozedur_Dokumentationsdatum">
+        <valueDateTime value="2020-04-23" />
+    </extension>
     <status value="completed" />
     <category>
         <coding>
@@ -23,9 +26,14 @@
             <code value="5-470" />
             <display value="Appendektomie" />
         </coding>
+        <text value="Entfernung des Blinddarms" />
     </code>
     <subject>
         <reference value="Patient/patient" />
     </subject>
+    <encounter>
+        <reference value="Encounter/patient" />
+    </encounter>
     <performedDateTime value="2020-04-23" />
+    <note value="Testnotiz" />
 </Procedure>
