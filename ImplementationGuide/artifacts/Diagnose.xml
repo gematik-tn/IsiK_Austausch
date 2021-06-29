@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="ISiKDiagnose" />
   <url value="https://gematik.de/fhir/ISiK/StructureDefinition/ISiKDiagnose" />
-  <version value="0.9" />
+  <version value="1.0" />
   <name value="ISiKDiagnose" />
   <status value="active" />
   <description value="Dieses Profil ermöglicht die Nutzung von Diagnosen in ISiK Szenarien." />

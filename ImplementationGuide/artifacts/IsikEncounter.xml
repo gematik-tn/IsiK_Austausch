@@ -278,10 +278,6 @@
       <path value="Encounter.period.end" />
       <mustSupport value="true" />
     </element>
-    <element id="Encounter.reasonCode">
-      <path value="Encounter.reasonCode" />
-      <mustSupport value="true" />
-    </element>
     <element id="Encounter.diagnosis">
       <path value="Encounter.diagnosis" />
       <mustSupport value="true" />

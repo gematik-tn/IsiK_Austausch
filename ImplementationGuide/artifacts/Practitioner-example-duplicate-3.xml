@@ -58,6 +58,7 @@
     <postalCode value="14469"/>
     <country value="DE"/>
   </address>
+  <gender value="male" />
   <birthDate>
     <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
       <valueCode value="masked"/>

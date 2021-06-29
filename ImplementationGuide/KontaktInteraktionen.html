@@ -5,21 +5,21 @@
     <head>
 
         <meta charset="utf-8" />
-        <title>Implementierungsleitfaden IsiK-Basismodul 1.0.0 CC</title>
+        <title>Implementierungsleitfaden ISiK-Basismodul 1.0.0</title>
 
-        <link rel="icon" href="guide/ImplementierungsleitfadenIsiK-Basismodul/files/styles/common/favicon.ico" />
+        <link rel="icon" href="guide/ImplementierungsleitfadenISiK-Basismodul/files/styles/common/favicon.ico" />
 
-        <script src="guide/ImplementierungsleitfadenIsiK-Basismodul/files/styles/common/jquery/jquery.min.js"></script>
-        <script src="guide/ImplementierungsleitfadenIsiK-Basismodul/files/styles/common/bootstrap/bootstrap.min.js"></script>
+        <script src="guide/ImplementierungsleitfadenISiK-Basismodul/files/styles/common/jquery/jquery.min.js"></script>
+        <script src="guide/ImplementierungsleitfadenISiK-Basismodul/files/styles/common/bootstrap/bootstrap.min.js"></script>
 
-        <link rel="stylesheet" href="guide/ImplementierungsleitfadenIsiK-Basismodul/files/styles/common/main.min.css" />
-        <link rel="stylesheet" href="guide/ImplementierungsleitfadenIsiK-Basismodul/files/styles/common/bootstrap/bootstrap.min.css" />
-        <link rel="stylesheet" href="guide/ImplementierungsleitfadenIsiK-Basismodul/files/styles/common/rendering/rendering.min.css" />
+        <link rel="stylesheet" href="guide/ImplementierungsleitfadenISiK-Basismodul/files/styles/common/main.min.css" />
+        <link rel="stylesheet" href="guide/ImplementierungsleitfadenISiK-Basismodul/files/styles/common/bootstrap/bootstrap.min.css" />
+        <link rel="stylesheet" href="guide/ImplementierungsleitfadenISiK-Basismodul/files/styles/common/rendering/rendering.min.css" />
 
-        <script src="guide/ImplementierungsleitfadenIsiK-Basismodul/files/styles/common/rendering/stu3TreeTable.min.js"></script>
-        <script src="guide/ImplementierungsleitfadenIsiK-Basismodul/files/styles/common/rendering/baseTreetable.min.js"></script>
+        <script src="guide/ImplementierungsleitfadenISiK-Basismodul/files/styles/common/rendering/stu3TreeTable.min.js"></script>
+        <script src="guide/ImplementierungsleitfadenISiK-Basismodul/files/styles/common/rendering/baseTreetable.min.js"></script>
 
-        <link rel="stylesheet" href="guide/ImplementierungsleitfadenIsiK-Basismodul/files/styles/twolevelmenu/style.css?v=1d751675f1dfc80" />
+        <link rel="stylesheet" href="guide/ImplementierungsleitfadenISiK-Basismodul/files/styles/twolevelmenu/style.css?v=1d76ceca2cacf80" />
 
     </head>
 
@@ -44,7 +44,7 @@
                 <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="Einfuehrung.html">
-                Implementierungsleitfaden IsiK-Basismodul 1.0.0 CC
+                Implementierungsleitfaden ISiK-Basismodul 1.0.0
             </a>
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -246,6 +246,21 @@
 <p><code>GET [base]/Encounter?date=lt2020-26-10</code></p>
 <p>Anwendungshinweise: Weitere Informationen zur Suche nach &quot;Encounter.period&quot; finden sich in der <a href="http://hl7.org/fhir/R4/search.html#date">FHIR-Basisspezifikation - Abschnitt &quot;Date Search&quot;</a>.</p>
 <p>Dieser Suchparameter ist für die Umsetzung des IHE QEDm Profils verpflichend.</p>
+</li>
+<li><p>Der Suchparameter &quot;location&quot; KANN unterstützt werden:</p>
+<p>Beispiele:</p>
+<p><code>GET [base]/Encounter?location=Location/test</code></p>
+<p>Anwendungshinweise: Weitere Informationen zur Suche nach &quot;Encounter.location&quot; finden sich in der <a href="https://www.hl7.org/fhir/search.html#reference">FHIR-Basisspezifikation - Abschnitt &quot;Reference Search&quot;</a>.</p>
+</li>
+<li><p>Der Suchparameter &quot;partOf&quot; KANN unterstützt werden:</p>
+<p>Beispiele:</p>
+<p><code>GET [base]/Encounter?part-of=Encounter/test</code></p>
+<p>Anwendungshinweise: Weitere Informationen zur Suche nach &quot;Encounter.partOf&quot; finden sich in der <a href="https://www.hl7.org/fhir/search.html#reference">FHIR-Basisspezifikation - Abschnitt &quot;Reference Search&quot;</a>.</p>
+</li>
+<li><p>Der Suchparameter &quot;service-provider&quot; KANN unterstützt werden:</p>
+<p>Beispiele:</p>
+<p><code>GET [base]/Encounter?service-provider=Organization/test</code></p>
+<p>Anwendungshinweise: Weitere Informationen zur Suche nach &quot;Encounter.serviceProvider&quot; finden sich in der <a href="https://www.hl7.org/fhir/search.html#reference">FHIR-Basisspezifikation - Abschnitt &quot;Reference Search&quot;</a>.</p>
 </li>
 <li><p>Der Suchparameter &quot;_profile&quot; KANN unterstützt werden:</p>
 <p>Beispiele:</p>

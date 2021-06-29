@@ -5,21 +5,21 @@
     <head>
 
         <meta charset="utf-8" />
-        <title>Implementierungsleitfaden IsiK-Basismodul 1.0.0 CC</title>
+        <title>Implementierungsleitfaden ISiK-Basismodul 1.0.0</title>
 
-        <link rel="icon" href="guide/ImplementierungsleitfadenIsiK-Basismodul/files/styles/common/favicon.ico" />
+        <link rel="icon" href="guide/ImplementierungsleitfadenISiK-Basismodul/files/styles/common/favicon.ico" />
 
-        <script src="guide/ImplementierungsleitfadenIsiK-Basismodul/files/styles/common/jquery/jquery.min.js"></script>
-        <script src="guide/ImplementierungsleitfadenIsiK-Basismodul/files/styles/common/bootstrap/bootstrap.min.js"></script>
+        <script src="guide/ImplementierungsleitfadenISiK-Basismodul/files/styles/common/jquery/jquery.min.js"></script>
+        <script src="guide/ImplementierungsleitfadenISiK-Basismodul/files/styles/common/bootstrap/bootstrap.min.js"></script>
 
-        <link rel="stylesheet" href="guide/ImplementierungsleitfadenIsiK-Basismodul/files/styles/common/main.min.css" />
-        <link rel="stylesheet" href="guide/ImplementierungsleitfadenIsiK-Basismodul/files/styles/common/bootstrap/bootstrap.min.css" />
-        <link rel="stylesheet" href="guide/ImplementierungsleitfadenIsiK-Basismodul/files/styles/common/rendering/rendering.min.css" />
+        <link rel="stylesheet" href="guide/ImplementierungsleitfadenISiK-Basismodul/files/styles/common/main.min.css" />
+        <link rel="stylesheet" href="guide/ImplementierungsleitfadenISiK-Basismodul/files/styles/common/bootstrap/bootstrap.min.css" />
+        <link rel="stylesheet" href="guide/ImplementierungsleitfadenISiK-Basismodul/files/styles/common/rendering/rendering.min.css" />
 
-        <script src="guide/ImplementierungsleitfadenIsiK-Basismodul/files/styles/common/rendering/stu3TreeTable.min.js"></script>
-        <script src="guide/ImplementierungsleitfadenIsiK-Basismodul/files/styles/common/rendering/baseTreetable.min.js"></script>
+        <script src="guide/ImplementierungsleitfadenISiK-Basismodul/files/styles/common/rendering/stu3TreeTable.min.js"></script>
+        <script src="guide/ImplementierungsleitfadenISiK-Basismodul/files/styles/common/rendering/baseTreetable.min.js"></script>
 
-        <link rel="stylesheet" href="guide/ImplementierungsleitfadenIsiK-Basismodul/files/styles/twolevelmenu/style.css?v=1d751675f1dfc80" />
+        <link rel="stylesheet" href="guide/ImplementierungsleitfadenISiK-Basismodul/files/styles/twolevelmenu/style.css?v=1d76ceca2cacf80" />
 
     </head>
 
@@ -44,7 +44,7 @@
                 <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="Einfuehrung.html">
-                Implementierungsleitfaden IsiK-Basismodul 1.0.0 CC
+                Implementierungsleitfaden ISiK-Basismodul 1.0.0
             </a>
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -206,27 +206,27 @@
 <p>Das Profil ISiKVersicherungsverhaeltnisGesetzlich basiert auf dem Profil <a href="http://fhir.de/StructureDefinition/coverage-de-gkv">&quot;Coverage, deutsches GKV Profil&quot; der deutschen Basisprofile</a>.</p>
 <p>Instanzen, die gegen ISiKVersicherungsverhaeltnisGesetzlich valide sind, sind auch valide gegen</p>
 <ul>
-<li>Profil <a href="http://fhir.de/StructureDefinition/coverage-de-gkv">&quot;Coverage, deutsches GKV Profil&quot; der deutschen Basisprofile</a></li>
+<li>Profil <a href="http://fhir.de/StructureDefinition/coverage-de-gkv">&quot;Coverage, deutsches GKV Profil&quot; der deutschen Basisprofile - v1.0.0</a></li>
 </ul>
 <p>Instanzen, die gegen ISiKVersicherungsverhaeltnisGesetzlich valide sind, sind <strong>nicht</strong> valide gegen:</p>
 <ul>
-<li><p>Profil <a href="https://fhir.kbv.de/StructureDefinition/KBV_PR_FOR_Coverage">KBV_PR_FOR_Coverage</a> der Formularübergreifenden Vorgaben der KBV (eRezept/eAU)</p>
+<li><p>Profil <a href="https://fhir.kbv.de/StructureDefinition/KBV_PR_FOR_Coverage">KBV_PR_FOR_Coverage der Formularübergreifenden Vorgaben der KBV (eRezept/eAU) - v1.0.3</a></p>
 <p>Um die Kompatibilität herzustellen, sind folgende Schritte erforderlich:</p>
 <ul>
 <li>folgende Elemente MÜSSEN entfernt werden:
 <ul>
 <li><code>Coverage.identifier</code></li>
-</ul>
-</li>
 <li><code>Coverage.status</code> MUSS den Wert <code>active</code> enthalten</li>
 </ul>
 </li>
 </ul>
+</li>
+</ul>
 <h4 id="profil-isikversicherungsverhaeltnisselbstzahler">Profil ISiKVersicherungsverhaeltnisSelbstzahler</h4>
-<p>Das Profil ISiKVersicherungsverhaeltnisSelbstzahler basiert auf dem Profil <a href="http://fhir.de/StructureDefinition/coverage-de-sel">&quot;Coverage, deutsches Selbstzahlerprofil&quot; der deutschen Basisprofile</a>.</p>
-<p>Instanzen, die gegen ISiKPatient valide sind, sind auch valide gegen</p>
+<p>Das Profil ISiKVersicherungsverhaeltnisSelbstzahler basiert auf dem Profil <a href="http://fhir.de/StructureDefinition/coverage-de-sel">&quot;Coverage, deutsches Selbstzahlerprofil&quot; der deutschen Basisprofile - v1.0.0</a>.</p>
+<p>Instanzen, die gegen ISiKVersicherungsverhaeltnisSelbstzahler valide sind, sind auch valide gegen</p>
 <ul>
-<li>Profil <a href="http://fhir.de/StructureDefinition/coverage-de-sel">&quot;Coverage, deutsches Selbstzahlerprofil&quot; der deutschen Basisprofile</a></li>
+<li>Profil <a href="http://fhir.de/StructureDefinition/coverage-de-sel">&quot;Coverage, deutsches Selbstzahlerprofil&quot; der deutschen Basisprofile - v1.0.0</a></li>
 </ul>
 
 

@@ -71,7 +71,7 @@
       <max value="1" />
       <type>
         <code value="Extension" />
-        <profile value="https://gematik.de/fhir/ISiK/StructureDefinition/Prozedur_Dokumentationsdatum" />
+        <profile value="http://fhir.de/StructureDefinition/ProzedurDokumentationsdatum" />
       </type>
       <mustSupport value="true" />
     </element>

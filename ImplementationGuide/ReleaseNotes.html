@@ -5,21 +5,21 @@
     <head>
 
         <meta charset="utf-8" />
-        <title>Implementierungsleitfaden IsiK-Basismodul 1.0.0 CC</title>
+        <title>Implementierungsleitfaden ISiK-Basismodul 1.0.0</title>
 
-        <link rel="icon" href="guide/ImplementierungsleitfadenIsiK-Basismodul/files/styles/common/favicon.ico" />
+        <link rel="icon" href="guide/ImplementierungsleitfadenISiK-Basismodul/files/styles/common/favicon.ico" />
 
-        <script src="guide/ImplementierungsleitfadenIsiK-Basismodul/files/styles/common/jquery/jquery.min.js"></script>
-        <script src="guide/ImplementierungsleitfadenIsiK-Basismodul/files/styles/common/bootstrap/bootstrap.min.js"></script>
+        <script src="guide/ImplementierungsleitfadenISiK-Basismodul/files/styles/common/jquery/jquery.min.js"></script>
+        <script src="guide/ImplementierungsleitfadenISiK-Basismodul/files/styles/common/bootstrap/bootstrap.min.js"></script>
 
-        <link rel="stylesheet" href="guide/ImplementierungsleitfadenIsiK-Basismodul/files/styles/common/main.min.css" />
-        <link rel="stylesheet" href="guide/ImplementierungsleitfadenIsiK-Basismodul/files/styles/common/bootstrap/bootstrap.min.css" />
-        <link rel="stylesheet" href="guide/ImplementierungsleitfadenIsiK-Basismodul/files/styles/common/rendering/rendering.min.css" />
+        <link rel="stylesheet" href="guide/ImplementierungsleitfadenISiK-Basismodul/files/styles/common/main.min.css" />
+        <link rel="stylesheet" href="guide/ImplementierungsleitfadenISiK-Basismodul/files/styles/common/bootstrap/bootstrap.min.css" />
+        <link rel="stylesheet" href="guide/ImplementierungsleitfadenISiK-Basismodul/files/styles/common/rendering/rendering.min.css" />
 
-        <script src="guide/ImplementierungsleitfadenIsiK-Basismodul/files/styles/common/rendering/stu3TreeTable.min.js"></script>
-        <script src="guide/ImplementierungsleitfadenIsiK-Basismodul/files/styles/common/rendering/baseTreetable.min.js"></script>
+        <script src="guide/ImplementierungsleitfadenISiK-Basismodul/files/styles/common/rendering/stu3TreeTable.min.js"></script>
+        <script src="guide/ImplementierungsleitfadenISiK-Basismodul/files/styles/common/rendering/baseTreetable.min.js"></script>
 
-        <link rel="stylesheet" href="guide/ImplementierungsleitfadenIsiK-Basismodul/files/styles/twolevelmenu/style.css?v=1d751675f1dfc80" />
+        <link rel="stylesheet" href="guide/ImplementierungsleitfadenISiK-Basismodul/files/styles/twolevelmenu/style.css?v=1d76ceca2cacf80" />
 
     </head>
 
@@ -44,7 +44,7 @@
                 <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="Einfuehrung.html">
-                Implementierungsleitfaden IsiK-Basismodul 1.0.0 CC
+                Implementierungsleitfaden ISiK-Basismodul 1.0.0
             </a>
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -204,15 +204,33 @@
                 <p>Im Rahmen der ISiK-Veröffentlichungen wird das <a href="https://semver.org/lang/de/">Semantic Versioning</a> verwendet.</p>
 <p>Die erste Ziffer X bezeichnet ein Major-Release und regelt die Gültigkeit von Releases. Die dritte Ziffer Y (Release x.0.y) bezeichnet eine technische Korrektur und versioniert kleinere Änderungen (Packages) während eines Jahres, z. B. 1.0.1.</p>
 <hr />
+<p>Version: 1.0.0</p>
+<p>Datum: 29.06.2021</p>
+<h5 id="ubergreifende-festlegungen">Übergreifende Festlegungen</h5>
+<ul>
+<li>Korrektur von verpflichtenden Suchparametern im CapabilityStatement mit Hinblick auf Must-Support-Flags in den Datenobjekt-Profilen</li>
+<li>Anpassung der ISiK-Profile an die Version v1.0.0-rc4 der Deutschen Basisprofile</li>
+</ul>
+<hr />
 <p>Version: 1.0.0 CC1</p>
 <p>Datum: 25.05.2021</p>
-<h5 id="ubergreifende-festlegungen">Übergreifende Festlegungen</h5>
+<h5 id="ubergreifende-festlegungen-1">Übergreifende Festlegungen</h5>
 <ul>
 <li>Hinweis angepasst, dass HTTPS im produktiven Einsatz verpflichtend ist</li>
 <li>Hinweis präzisiert, dass die eingesetzte Software eines Drittherstellers nur im Rahmen des Bestätigungsverfahrens zu einem Bestandteil des Primärsystems wird</li>
 <li>Canoncial der ImplementationGuide-Ressource für ISiK harmonisiert mit den Schema der restlichen Canonicals</li>
-<li>:not und :text Modifier waren als Modifier für String-Suchaparameter anstelle von Token-Suchaparameter definiert</li>
-<li>Anpassung der ISiK-Profile an die Version v1.0.0-rc1 der Deutschen Basisprofile</li>
+<li>:not und :text Modifier waren als Modifier für String-Suchparameter anstelle von Token-Suchparameter definiert</li>
+<li>Anpassung der ISiK-Profile an die Version v1.0.0-rc1 der Deutschen Basisprofile:</li>
+</ul>
+<h6 id="im-vergleich-zu-der-version-1.0.0-alpha9-ergeben-sich-in-den-deutschen-basisprofile-folgende-anderungen">Im Vergleich zu der Version 1.0.0-alpha9 ergeben sich in den deutschen Basisprofile folgende Änderungen:</h6>
+<ul>
+<li>ValueSet Binding in Lebensphase-Extension korrigiert</li>
+<li>Übersetzung von marital-status (&quot;S&quot;) korrigiert</li>
+<li>BSNR und LANR aus CodeSystem-identifier-type-de gelöscht (sind bereits in HL7 v2 Table 0203 enthalten)</li>
+<li>Constraint gender-amtlich-1 in die Extension gender-amtlich direkt eingefügt</li>
+<li>Verweis auf own-prefix Extension in Extension-humanname-namenszusatz korrigiert</li>
+<li>Anpassung der ICD-10-GM-Extensions und des Coding-Datentyp-Profils zur korrekten Abbildung von Mehrfachkodierungen</li>
+<li>Änderung der canonical URL folgender, ehemals DIMDI, jetzt BfArM CodeSysteme: ICD-10-GM, OPS, ATC</li>
 </ul>
 <h5 id="diagnose">Diagnose</h5>
 <ul>
